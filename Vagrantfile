@@ -9,4 +9,7 @@ Vagrant.configure("2") do |config|
   config.vm.synced_folder "dockerfiles", "/dockerfiles"
   config.vm.synced_folder "<change_this>", "/projects"
   config.vm.network "private_network", ip: "192.168.50.4"
+  config.vm.provider :virtualbox do |vb|
+    vb.customize ["modifyvm", :id, "--memory", "2048"]
+  end
 end
