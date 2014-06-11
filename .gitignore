@@ -1,4 +1,5 @@
 .vagrant
 .idea
 *.iml
+packer_cache
 config.rb
