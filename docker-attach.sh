@@ -1,3 +1,3 @@
 #!/bin/bash
 
-lxc-attach --name=`docker inspect $1 | grep "\"ID\"" | sed 's/^.*\: "\(.*\)".*$/\1/'`
+lxc-attach --name=`docker inspect $1 | grep "\"Id\"" | sed 's/^.*\: "\(.*\)".*$/\1/'`
