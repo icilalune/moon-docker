@@ -10,6 +10,8 @@ echo 'DOCKER_OPTS="-e lxc -s aufs"' >> /etc/default/docker
 
 service docker restart
 
+adduser vagrant docker
+
 # get fig
 curl -L https://github.com/orchardup/fig/releases/download/0.4.1/linux > /usr/local/bin/fig
 
