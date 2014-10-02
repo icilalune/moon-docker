@@ -17,3 +17,6 @@ curl -L https://github.com/orchardup/fig/releases/download/0.4.1/linux > /usr/lo
 
 # set it executable
 chmod +x /usr/local/bin/fig
+
+# install docker-enter
+docker run --rm -v /usr/local/bin:/target jpetazzo/nsenter
